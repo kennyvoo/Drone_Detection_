@@ -70,7 +70,7 @@ if(args.video==False):
 	print("Without splitting")
 	c.visualize(drawing_image)
 
-	print("splitted into 4")
+	print("splitted into "+str(section))
 	if section!=1:   # without splitting to sections
 	 # split into 4 or 6
 		 drawing_image=split_to_sections(c,section,original_image,scale_percent)
