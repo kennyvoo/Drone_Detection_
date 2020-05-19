@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-f","--file_path",required=True,help="the file path for the image/video from the current directory")
 parser.add_argument("-v","--video",default=False, action='store_true',help="Whether the file is a video")
 parser.add_argument("-z","--zoom",default=250, type=int,help="enlarge in %")
-parser.add_argument("-s","--section",default=4, type=int,choices={"1","4", "6"},help="4 or 6 only for now")
+parser.add_argument("-s","--section",default=4, type=int,choices={1,4, 6},help="1,4 or 6 only for now")
 
 args=parser.parse_args()
 c = Core()
